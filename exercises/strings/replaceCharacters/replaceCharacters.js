@@ -12,14 +12,26 @@
  */
 
 function replaceCharacters(string, replacementDict) {
-  // This is your job. :)
-}
+  //console.log(Object.keys(replacementDict))
+  for (let element of string){
+    for (let i of Object.keys(replacementDict)){
+      if (element === i){
+        string = string.replace(element, replacementDict[i])
+    }
+    }
+    }
+    return string
+    }
 
 if (require.main === module) {
   console.log('Running sanity checks for replaceCharacters:');
+  }
+module.exports == replaceCharacters.js;
+  console.log(replaceCharacters("Hello", {'H': 'y', 'l': '8'} ) == "ye88o");
+  console.log(replaceCharacters("Beyonce", {'o':'g', 'n':'o','c':'n'}) == "Beygone");
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
-}
+
 
 module.exports = replaceCharacters;
