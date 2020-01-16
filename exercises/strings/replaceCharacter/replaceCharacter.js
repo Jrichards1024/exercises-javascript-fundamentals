@@ -13,14 +13,27 @@
  */
 
 function replaceCharacter(string, target, replaceWith) {
-  // This is your job. :)
+  let newList = string.split(' ');
+  for (let element of newList){
+    if (element == target){
+      return string.replace(element, replaceWith)
+    }
+  }
+  //console.log(newThing)
+  //return string
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for replaceCharacter:');
+
+module.exports == replaceCharacter.js;
+  console.log(replaceCharacter("We are here", "We", "They" ) == "They are here");
+  console.log(replaceCharacter("I am Joseph", "am", "was") == "I was Joseph");
+  console.log(replaceCharacter("What is for dinner today", "today", "tomorrow") == "What is for dinner tomorrow");
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
 }
 
 module.exports = replaceCharacter;
+
