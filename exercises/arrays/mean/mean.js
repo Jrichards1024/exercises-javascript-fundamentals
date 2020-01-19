@@ -19,14 +19,23 @@
  * @returns {number} The mean of the numbers in the array
  */
 function mean(array) {
-  // This is your job. :)
+  let addition = 0 
+  for (let element of array){
+    addition = addition + element
+  }
+  return addition/ array.length
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for mean:');
 
-  // Add your own sanity checks here.
-  // How else will you be sure your code does what you think it does?
+
+ console.log(mean([30, 10, 20]) === 20);
+ console.log(mean([-10, 10]) === 0);
 }
+
+
+
+
 
 module.exports = mean;
