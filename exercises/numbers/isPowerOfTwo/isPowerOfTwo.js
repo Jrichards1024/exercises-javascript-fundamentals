@@ -1,22 +1,23 @@
+
 /**
- * Given a non-negative integer as input, returns `true` if input is a power of `2` and `false` otherwise.
+ * Given two non-negative integers, `n` and `b`, return `true` if `n` is a power of `b`
+ * and `false` otherwise.
  *
- * A number is a power of `2` if it can be written as `2**k` for some positive integer `k`, where "`**`"
- * represents the exponentiation operator.
+ * A number is a `n` power of `b` if it can be written as `b**k` for some positive integer `k`,
+ * where "`**`" represents the exponentiation operator.
  *
  * For example, since `8` equals `2 * 2 * 2`, which is `2**3`, then `8` is a power of `2`.
- * Conversely, `81` is not a power of `2` since there's no integer `k` such that `81 === 2**k`.
- *
- * However, `81` _is_ a power of `3` since `81 === 3**4`.
+ * Conversely, `9` is not a power of `2` since there's no integer `k` such that `9 === 2**k`.
  *
  * @example
- * isPowerOf(2, 2) // => true
- * isPowerOf(3, 3) // => true
- * isPowerOf(10, 2) // => false
+ * isPowerOf(2) // => true
+ * isPowerOf(3) // => false
+ * isPowerOf(4) // => true
+ * isPowerOf(2**20) // => true
+ * isPowerOf(2**20 + 1) // => false
  *
- * @param {number} n - The number
- * @param {number} b - The base
- * @returns {boolean} True if the number is a power of the base, false otherwise.
+ * @param {number} num - The input number
+ * @returns {boolean} True if input is a power of 2 and false otherwise.
  */
 function isPowerOfTwo(num) {
   // Your code here

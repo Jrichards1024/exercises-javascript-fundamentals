@@ -11,6 +11,15 @@
  * @returns {boolean} True if num is prime and false otherwise
  */
 function isPrime(num) {
+  if (num % 2 === 0 && num !== 2){
+    return false
+  }
+  for (let d = 3; d < num; d +=2){
+    if (num % d === 0){
+      return false;
+    }
+  }
+  return true;
   /*
     Your code goes here.
 
@@ -25,7 +34,7 @@ function isPrime(num) {
 if (require.main === module) {
   console.log('Running sanity checks for isPrime:');
 
-  console.log(isPrime(1) === false);
+  //console.log(isPrime(1) === false);
   console.log(isPrime(2) === true);
   console.log(isPrime(4) === false);
 

@@ -21,6 +21,14 @@ let helpers = require('../printHelpers');
  * @param {number} n - The size of the multiplication table to print
  */
 function printMultiplicationTable(n) {
+  let columnWidth = (n**2).toString().length;
+  for(let i = 1; i < n + 1; i ++){
+    for(let j = 1; j < n + 1; j ++){
+      helpers.printCountTimes((i * j).toString().padStart(columnWidth, " "), 1)
+      helpers.printCountTimes(" ", 2)
+    }
+    helpers.printNewLine()
+  }
   /*
     This is your job. :)
 
@@ -47,7 +55,7 @@ if (require.main === module) {
   multiplicationTablePrintTest(1);
   multiplicationTablePrintTest(2);
   multiplicationTablePrintTest(5);
-  multiplicationTablePrintTest(8);
+  multiplicationTablePrintTest(10);
 }
 
 module.exports = printMultiplicationTable;

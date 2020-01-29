@@ -13,7 +13,7 @@
  */
 function sumOfRange(leftSummand, rightSummand) {
   let counter = 0;
-  for (let i = leftSummand; i += 1;i <= rightSummand){
+  for (let i = leftSummand;i <= rightSummand; i += 1){
     counter = i + counter;
   }
   return counter;

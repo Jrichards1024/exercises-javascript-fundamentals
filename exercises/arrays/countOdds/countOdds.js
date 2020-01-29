@@ -32,4 +32,3 @@ console.log(countOdds([1, 1, 1, 2]) == 3)
 
 
 module.exports = countOdds;
-

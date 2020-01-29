@@ -1,0 +1,12 @@
+function printSolidSquare(height) {
+  square =""
+  // for (let i = "# "; i < height; i = i + "#"){
+  //   for (let j = "#"; j < height; j = j + "#"){
+  //     square = square + j
+
+
+      
+  //   }
+  //   console.log("my square", square)
+
+  // }

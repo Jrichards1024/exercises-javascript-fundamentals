@@ -11,7 +11,6 @@
  * @returns {boolean} True if every number in the input array is positive
  *   and false otherwise.
  */
-
 function allPositive(array) {
   for (let i of array) {
     if (i <= 0) {
@@ -30,4 +29,3 @@ module.exports == allPositive.js;
 
 
 module.exports = allPositive;
-

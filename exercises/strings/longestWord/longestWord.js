@@ -36,4 +36,3 @@ module.exports == longestWord.js;
 
 
 module.exports = longestWord;
-
