@@ -35,3 +35,10 @@ module.exports == includes.js
  console.log(includes([1, 2, 30, -10], 30) == true);
  console.log(includes(['waffle', 'giraffe', 'banana'], 'giraffe') == true);
  console.log(includes(['waffle', 'giraffe', 'banana'], 'lemons')== false);
+  
+
+  // Add your own sanity checks here.
+  // How else will you be sure your code does what you think it does?
+
+
+module.exports = includes;

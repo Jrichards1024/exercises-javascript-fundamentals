@@ -39,4 +39,3 @@ module.exports == countGreaterThan.js;
 }
 
 module.exports = countGreaterThan;
-

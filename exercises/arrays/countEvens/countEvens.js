@@ -27,3 +27,13 @@ if (require.main === module) {
 module.exports == countEvens.js;
   console.log(countEvens([1, 2, 3, 4, 5]) == 2);
   console.log(countEvens([10, 10, 10]) == 3);
+
+
+
+
+
+  // Add your own sanity checks here.
+  // How else will you be sure your code does what you think it does?
+
+
+module.exports = countEvens;

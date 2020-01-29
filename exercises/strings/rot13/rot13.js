@@ -29,14 +29,40 @@
  */
 
 function rot13(string) {
-  // This is your job. :)
+  for (let i = 0; i < string.length; i ++){
+    if (string.charCodeAt(i) < 71){
+      string = string
+    }
+    else {
+    console.log("original letter and it's number: ", string[i], string.charCodeAt(i))  
+    newNum = string.charCodeAt(i) + 13
+    console.log("new letter: ",newNum)
+    if (string.charCodeAt(i)< 90 && newNum > 90){
+      newNum = newNum - 26
+      console.log('newNum after subtraction', newNum)
+    }
+    else if (string.charCodeAt(i)< 122 && newNum > 122){
+      newNum = (newNum - 122) + 96
+    }
+    
+    //console.log(string[i])
+    console.log("4 new letter as letter: ", String.fromCharCode(newNum))
+    console.log("5 the string before change: ",string)
+
+    string = string.replace(string[i],String.fromCharCode(newNum))
+    console.log("6 new string: ", string)
+    
+  }
+  }
+  return string
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for rot13:');
-
-  // Add your own sanity checks here.
-  // How else will you be sure your code does what you think it does?
+module.exports == rot13.js;
+  //console.log(rot13('Hello, world!') == 'Uryyb, jbeyq!');
+  console.log(rot13('Uryyb, jbeyq!') == 'Hello, world!');
+  
 }
 
 module.exports = rot13;

@@ -27,6 +27,14 @@ let helpers = require('../printHelpers');
  * @param {number} height - The height of the square to print
  */
 function printSolidSquare(height) {
+    newLine = "\r\n"
+    square =""
+    for (let i = 0 ; i < height; i ++){
+        for (let j = 0; j < height; j ++){
+            square = square + "#"}
+            square = square + newLine
+        }
+    return (square)}
   /*
     Reflect: given `height`...
     1. How many lines to we want to print?

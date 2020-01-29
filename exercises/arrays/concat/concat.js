@@ -29,17 +29,18 @@ let emptyList = [];
   for (let i of rightArray){
     emptyList.push(i)
   }
-
+console.log(emptyList)
 return emptyList
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for concat:');
 }
-console.log(concat([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6]);
-console.log(concat([-10, "undefined"], [true, 'waffles']) ==[-10, "undefined", true, 'waffles']);
-console.log(concat([], []) == []);
-console.log(concat([20, 104], []) == [20, 104]);
-console.log(concat([], ['hello', 'world']) == ['hello', 'world']);
+module.exports == concat.js;
+  console.log(concat([1, 2, 3], [4, 5, 6]) === [1, 2, 3, 4, 5, 6]);
+  console.log(concat([-10, "undefined"], [true, 'waffles']) === [-10, "undefined", true, 'waffles']);
+  console.log(concat([], []) === []);
+  console.log(concat([20, 104], []) == [20, 104]);
+  console.log(concat([], ['hello', 'world']) == ['hello', 'world']);
 
 module.exports = concat;

@@ -14,9 +14,15 @@
  * @returns {boolean} True if num is even and false otherwise
  */
 function isOdd(num) {
-  // Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
-  return _____;
+  if (num % 2 === 0) {
+      return false
+  }
+  else {
+      return true;
+   }
+  
 }
+
 
 if (require.main === module) {
   let oddInputs = [1, 19, 99, 767];

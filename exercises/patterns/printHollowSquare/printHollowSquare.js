@@ -28,20 +28,31 @@ let helpers = require('../printHelpers');
  */
 function printHollowSquare(height) {
   for (let i = 0; i < height; i++) {
-    // This is your job. :)
+    if (i === 0){
+      helpers.printCountTimes("#", height)
+    }
+    else if (i === height-1){
+    helpers.printCountTimes("#", height)
+    }
+    else {
+      helpers.printCountTimes("#", 1 )
+      helpers.printCountTimes(" ", height - 2)
+      helpers.printCountTimes("#",1)
+    }
 
-    helpers.printNewLine();
+    //helpers.prin
+    helpers.printNewLine(height);  
   }
-}
+
+  } 
 /**
  * For testing purposes, prints a diagram of the given height.
  */
 function hollowSquarePrintTest(height) {
   console.log('');
   console.log(`Printing a HOLLOW SQUARE of height ${height}:`);
-
-  printHollowSquare(height);
-}
+   console.log(printHollowSquare(height));
+ }
 
 if (require.main === module) {
   /*
@@ -51,7 +62,7 @@ if (require.main === module) {
     what we expect.
   */
 
-  hollowSquarePrintTest(1);
+  hollowSquarePrintTest(5);
   hollowSquarePrintTest(2);
   hollowSquarePrintTest(4);
   hollowSquarePrintTest(6);

@@ -36,4 +36,3 @@ module.exports == replaceCharacter.js;
 }
 
 module.exports = replaceCharacter;
-
